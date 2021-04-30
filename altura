@@ -1,0 +1,15 @@
+Suma la estatura de la madre y la del padre en pulgadas o en centímetros.
+
+Súmale 5 pulgadas (13 centímetros) para los niños o 
+réstale 5 pulgadas (13 centímetros) para las niñas.
+Divide el resultado por dos.
+
+ s = estatura Madre + estatura padre
+ z = 13 
+ 
+ if (sexo = niño)
+    estatura final = s + z
+ else if 
+    estatura final = s - z 
+
+return s

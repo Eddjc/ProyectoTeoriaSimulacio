@@ -1,0 +1,16 @@
+<div class="container" >
+  <div>
+    <div style="display: block">
+      <div class="container-fluid"><h3>Grafica Altura (cm) vrs Tiempo(años)</h3></div><br>
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    
+  </div>
+</div>

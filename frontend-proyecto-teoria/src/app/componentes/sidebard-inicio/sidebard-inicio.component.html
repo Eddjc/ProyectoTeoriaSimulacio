@@ -1,0 +1,61 @@
+<div class="">
+    <!-- Header Start -->
+    <div class="header home">
+        <div class="container-fluid">
+            <div class="header-top row align-items-center">
+                <div class="col-lg-3">
+                    <div class="brand">
+                        <a href="index.html">
+                            Consultorio HN
+                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="topbar">
+                        
+                    </div>
+                    <div class="navbar navbar-expand-lg bg-light navbar-light">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero row align-items-center">
+                <div class="">
+                    <div class="form">
+                        <h3>Ingresar Datos</h3>
+                        <form novalidate [formGroup]="formularioOrden" >
+                            <input formControlName= "nombre" class="form-control" type="text" placeholder="Nombre del paciente">
+                            <input formControlName = "estaturaPadre" id="1" class="form-control" type="number" placeholder="Estatura Padre">
+                            <input formControlName = "estaturaMadre" id="2"class="form-control" type="number" placeholder="Estatura Madre">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Genero</option>
+                                <option value="1">Niña</option>
+                                <option value="2">Niño</option>
+                                <option value="3">Three</option>
+                              </select>
+                            <div class="control-group"></div>
+                            <textarea formControlName = "comentario" class="form-control" placeholder="Comment"></textarea>
+                            <button [disabled]="!formularioOrden.valid" type="button" (click)= "guardar()" [routerLink]="['/dashboard-inicio/grafica']"  routerLinkActive="active"  class="btn btn-block" > calcular</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="hero row align-items-center">
+                <div class="col-1-md-5">
+                    <div >
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

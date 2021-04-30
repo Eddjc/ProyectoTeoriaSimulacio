@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre Orden</th>
+      <th scope="col">Tipo de orden</th>
+      <th scope="col">Fecha</th>
+      <th scope="col">Porcentaje del personal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let orden of ordenes" >
+      <td>{{orden.id}}</td>
+      <td>{{orden.nombre}}</td>
+      <td>{{orden.tipo}}</td>
+      <td>{{orden.fecha}}</td>
+      <td>{{orden.porcentaje}}</td>
+      <td><button type="button" class="btn btn-danger" (click)="eliminarOrden(orden.id)">X</button></td>
+      <td><button type="button" class="btn btn-info" (click)="editarOrden(orden.id)">Editar</button></td>
+    </tr>
+  </tbody>
+</table>
